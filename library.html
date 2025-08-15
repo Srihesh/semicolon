@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Library | Regex Voyager</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle fill='%230a0f1e' cx='32' cy='32' r='32'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.35em' font-size='32' font-family='monospace' fill='%234fc3f7'%3E.*%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-cyber">
+    <div id="preloader"><div class="glitch-text" data-text="LOADING DATA...">LOADING DATA...</div></div>
+    <div class="vignette"></div>
+    <div id="cursor-light"></div> <div class="vignette"></div>
+    <canvas id="particle-canvas"></canvas>
+    <div class="scanlines"></div>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo glitch" data-text="Regex Voyager">Regex Voyager</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="visualizer.html" class="nav-link">Visualizer</a></li>
+                <li><a href="library.html" class="nav-link active">Library</a></li>
+                <li><a href="playground.html" class="nav-link">Playground</a></li>
+                <li><a href="cheatsheet.html" class="nav-link">Cheatsheet</a></li>
+                <li><a href="challenges.html" class="nav-link">Challenges</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul
+            <div class="navbar-hud">
+                <div id="navbar-clock"></div>
+                <div id="settings-toggle" aria-label="Toggle theme settings">&#9881;</div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="library-section anim-fade-in">
+            <h1 class="glitch" data-text="Pattern Library Matrix">Pattern Library Matrix</h1>
+            <p class="subtitle">An expanded arsenal of curated expressions. Click to copy and deploy.</p>
+            <div id="pattern-library" class="pattern-grid">
+                </div>
+        </section>
+    </main>
+    <div id="settings-panel">
+        <h4>Select Theme</h4>
+        <button class="theme-btn" data-theme="theme-cyber">Cyber</button>
+        <button class="theme-btn" data-theme="theme-matrix">Matrix</button>
+        <button class="theme-btn" data-theme="theme-solarized">Solarized</button>
+    </div>
+    <footer><p>Regex Voyager &copy; 2025</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

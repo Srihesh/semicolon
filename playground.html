@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Greenhouse | The Regex Engine</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle fill='%230a0f1e' cx='32' cy='32' r='32'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.35em' font-size='32' font-family='monospace' fill='%234fc3f7'%3E.*%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-cyber">
+    <div id="preloader"><div class="glitch-text" data-text="PURIFYING AIR...">PURIFYING AIR...</div></div>
+    <div class="vignette"></div>
+    <div id="cursor-light"></div>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-content">
+                <a href="index.html" class="nav-logo glitch" data-text="The Regex Engine">The Regex Engine</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Platform</a></li>
+                    <li><a href="visualizer.html" class="nav-link">Engine Room</a></li>
+                    <li><a href="playground.html" class="nav-link active">Greenhouse</a></li>
+                    <li><a href="challenges.html" class="nav-link">Tail Section</a></li>
+                    <li><a href="archive.html" class="nav-link">Archive</a></li>
+                    <li><a href="about.html" class="nav-link">Observation Car</a></li>
+                </ul>
+                <div class="navbar-hud">
+                    <div id="navbar-clock"></div>
+                    <div id="settings-toggle" aria-label="Toggle theme settings">&#9881;</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="playground-section anim-fade-in">
+            <h1 class="glitch" data-text="The Greenhouse">The Greenhouse</h1>
+            <p class="subtitle">Cultivate perfection. Test your creations in a sterile environment.</p>
+            <div class="playground-box">
+                <div class="input-group">
+                    <label for="playground-pattern">Regex Pattern</label>
+                    <input type="text" id="playground-pattern" placeholder="e.g., (\w+)">
+                </div>
+                <div class="input-group">
+                    <label for="playground-tests">Test Cases (one per line)</label>
+                    <textarea id="playground-tests" rows="4" placeholder="e.g., voyager&#10;system&#10;online"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="playground-sub">Substitution String (use $1, $2... for groups)</label>
+                    <input type="text" id="playground-sub" placeholder="e.g., [$1]">
+                </div>
+                <div class="playground-actions">
+                    <button id="playground-test-btn" class="primary">Execute</button>
+                    <button id="playground-share-btn" class="secondary">Share Pattern</button>
+                </div>
+                <div id="playground-result"></div>
+                <div id="playground-sub-result"></div>
+            </div>
+        </section>
+    </main>
+    <div id="settings-panel">
+        <h4>Select Theme</h4>
+        <button class="theme-btn" data-theme="theme-cyber">Cyber</button>
+        <button class="theme-btn" data-theme="theme-matrix">Matrix</button>
+        <button class="theme-btn" data-theme="theme-solarized">Solarized</button>
+    </div>
+    <footer><p>The Regex Engine &copy; 2025</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Archive | The Regex Engine</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle fill='%230a0f1e' cx='32' cy='32' r='32'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.35em' font-size='32' font-family='monospace' fill='%234fc3f7'%3E.*%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-cyber">
+    <div id="preloader"><div class="glitch-text" data-text="ACCESSING ARCHIVES...">ACCESSING ARCHIVES...</div></div>
+    <div class="vignette"></div>
+    <div id="cursor-light"></div>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-content">
+                <a href="index.html" class="nav-logo glitch" data-text="The Regex Engine">The Regex Engine</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Platform</a></li>
+                    <li><a href="visualizer.html" class="nav-link">Engine Room</a></li>
+                    <li><a href="playground.html" class="nav-link">Greenhouse</a></li>
+                    <li><a href="challenges.html" class="nav-link">Tail Section</a></li>
+                    <li><a href="archive.html" class="nav-link active">Archive</a></li>
+                    <li><a href="about.html" class="nav-link">Observation Car</a></li>
+                </ul>
+                <div class="navbar-hud">
+                    <div id="navbar-clock"></div>
+                    <div id="settings-toggle" aria-label="Toggle theme settings">&#9881;</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="archive-section anim-fade-in">
+            <h1 class="glitch" data-text="The Archive">The Archive</h1>
+            <p class="subtitle">Dusty, forgotten, but powerful. The collective memory of the train.</p>
+        </section>
+        
+        <section class="anim-fade-in">
+            <h2 class="glitch" data-text="Pattern Library">Pattern Library</h2>
+            <p>A collection of useful expressions scavenged from across the train.</p>
+            <div id="pattern-library" class="pattern-grid"></div>
+        </section>
+
+        <section class="anim-fade-in">
+            <h2 class="glitch" data-text="The Schematics">The Schematics</h2>
+            <p>Uncover the forgotten blueprints. Click any token for a live demonstration.</p>
+            <div id="cheatsheet-grid"></div>
+        </section>
+    </main>
+    <div id="settings-panel">
+        <h4>Select Theme</h4>
+        <button class="theme-btn" data-theme="theme-cyber">Cyber</button>
+        <button class="theme-btn" data-theme="theme-matrix">Matrix</button>
+        <button class="theme-btn" data-theme="theme-solarized">Solarized</button>
+    </div>
+    <div id="cheatsheet-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <h2 id="modal-token"></h2>
+            <p id="modal-desc"></p>
+            <div id="modal-demo"></div>
+        </div>
+    </div>
+    <footer><p>The Regex Engine &copy; 2025</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

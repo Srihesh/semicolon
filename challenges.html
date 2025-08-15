@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tail Section | The Regex Engine</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle fill='%230a0f1e' cx='32' cy='32' r='32'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.35em' font-size='32' font-family='monospace' fill='%234fc3f7'%3E.*%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-cyber">
+    <div id="preloader"><div class="glitch-text" data-text="ENTERING TAIL...">ENTERING TAIL...</div></div>
+    <div class="vignette"></div>
+    <div id="cursor-light"></div>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-content">
+                <a href="index.html" class="nav-logo glitch" data-text="The Regex Engine">The Regex Engine</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Platform</a></li>
+                    <li><a href="visualizer.html" class="nav-link">Engine Room</a></li>
+                    <li><a href="playground.html" class="nav-link">Greenhouse</a></li>
+                    <li><a href="challenges.html" class="nav-link active">Tail Section</a></li>
+                    <li><a href="archive.html" class="nav-link">Archive</a></li>
+                    <li><a href="about.html" class="nav-link">Observation Car</a></li>
+                </ul>
+                <div class="navbar-hud">
+                    <div id="navbar-clock"></div>
+                    <div id="settings-toggle" aria-label="Toggle theme settings">&#9881;</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="challenges-section anim-fade-in">
+            <h1 class="glitch" data-text="Regex Golf Arena">Regex Golf Arena</h1>
+            <p class="subtitle">Survival of the fittest. The shortest pattern wins.</p>
+            <div class="challenge-container">
+                <div class="challenge-selector">
+                    <label for="challenge-select">Select Challenge:</label>
+                    <select id="challenge-select"></select>
+                </div>
+                <div id="challenge-description"></div>
+                <div class="challenge-input-area">
+                    <span>/</span>
+                    <input type="text" id="challenge-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                    <span>/</span>
+                    <div id="char-count">Length: 0</div>
+                </div>
+                <div class="challenge-feedback-grid">
+                    <div id="match-list-container">
+                        <h4>Must Match</h4>
+                        <ul id="match-list"></ul>
+                    </div>
+                    <div id="reject-list-container">
+                        <h4>Must Not Match</h4>
+                        <ul id="reject-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="settings-panel">
+        <h4>Select Theme</h4>
+        <button class="theme-btn" data-theme="theme-cyber">Cyber</button>
+        <button class="theme-btn" data-theme="theme-matrix">Matrix</button>
+        <button class="theme-btn" data-theme="theme-solarized">Solarized</button>
+    </div>
+    <footer><p>The Regex Engine &copy; 2025</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
