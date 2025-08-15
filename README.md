@@ -1,6 +1,6 @@
 # The Regex Engine 🚂
 
-A cyberpunk-themed, interactive world for learning and testing regular expressions. Built with 100% vanilla HTML, CSS, and JavaScript.
+A cyberpunk-themed, interactive world for learning and testing regular expressions. Built with vanilla HTML, CSS, and JavaScript.
 
 ### ✨ [Live Demo Link Here] ✨
 
