@@ -2,7 +2,7 @@
 
 A cyberpunk-themed, interactive world for learning and testing regular expressions. Built with vanilla HTML, CSS, and JavaScript.
 
-### ✨ [https://srihesh.github.io/semicolon/] ✨
+## ✨ [https://srihesh.github.io/semicolon/] ✨
 
 ---
 
